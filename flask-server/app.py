@@ -6,13 +6,15 @@ import datetime
 
 app = Flask(__name__)
 CORS(app)
-
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///article_db.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://sql6588183:NjqHuVi4ee@sql6.freesqldatabase.com/sql6588183'
+# app.config['MYSQL_HOST'] = 'sql6.freesqldatabase.com'
+# app.config['MYSQL_USER'] = 'sql6588183'
+# app.config['MYSQL_PASSWORD'] = 'NjqHuVi4ee'
+# app.config['MYSQL_DB'] = 'sql6588183'
 app.config['SQLALCHEMY_TRACK_NOTIFICATIONS'] = False
 
 #instantiate db object
 db = SQLAlchemy(app)
-
 
 app.app_context().push()
 

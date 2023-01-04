@@ -60,7 +60,7 @@ function App() {
       <div className='container'>
         <div className='header'>
           <h3>TO DO LIST </h3>
-          <button type="button" class="btn btn-outline-info" onClick={openForm} >Add</button>
+          <button type="button" className="btn btn-outline-info" onClick={openForm} >Add</button>
         </div>
 
         <div className='form'>
