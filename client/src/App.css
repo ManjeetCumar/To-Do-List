@@ -1,0 +1,35 @@
+ .App {
+  background-color: #fff;
+  min-height: 100vh;
+} 
+
+.container{  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-top: 3rem;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 20%;
+}
+
+.insert{
+  margin: 1rem;
+}
+
+.list{
+  margin: 2rem;
+}
+
+.form{
+  margin: 1rem;
+}
+
+
+
