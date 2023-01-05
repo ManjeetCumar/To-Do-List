@@ -63,15 +63,14 @@ function App() {
           <button type="button" className="btn btn-outline-info" onClick={openForm} >Add</button>
         </div>
 
-        <div className='form'>
-          {editedArt ? <Form article={editedArt} updateData={updatedData} insertedData={insertedData} /> : null}
-        </div>
-
         <div className='list'>
+          <div className='form'>
+            {editedArt ? <Form article={editedArt} updateData={updatedData} insertedData={insertedData} /> : null}
+          </div>
           <Artlist articles={articles} editArticle={editArticle} deleteArticle={deleteArticle} />
         </div>
 
-
+        
 
       </div>
 

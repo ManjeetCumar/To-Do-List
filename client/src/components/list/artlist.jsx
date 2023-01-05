@@ -25,29 +25,25 @@ const artlist = (props) => {
             <th scope="col">Action</th>
           </tr>
         </thead>
-
-
-        {props.articles.map((article,index) => (
-          <tbody>
-            <tr>
+        <tbody>
+          {props.articles.map((article, index) => (
+            <tr key={index}>
               <th scope="row">{index + 1}</th>
               <td>{article.title}</td>
               <td>{article.body}</td>
               <td>{article.date}</td>
               <td>
                 <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-                  <button className="btn btn-primary me-md-2" type="button" onClick = {() => editNote(article)}>Update</button>
-                  <button className="btn btn-danger" 
+                  <button className="btn btn-primary me-md-2" type="button" onClick={() => editNote(article)}>Update</button>
+                  <button className="btn btn-danger"
                     type="button"
-                    onClick = {() => deleteArticle(article)}
-                    >Delete</button>
+                    onClick={() => deleteArticle(article)}
+                  >Delete</button>
                 </div>
               </td>
             </tr>
-          </tbody>
-        ))}
-        
-
+        ))}        
+        </tbody>  
       </table>
 
     </div>

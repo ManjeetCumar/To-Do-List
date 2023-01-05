@@ -29,6 +29,7 @@
 
 .form{
   margin: 1rem;
+  width : 100%;
 }
 
 @media screen and (max-width: 900px){
